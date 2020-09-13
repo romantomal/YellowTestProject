@@ -1,0 +1,48 @@
+section {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+}
+
+.loader {
+  box-sizing: border-box;
+  position: relative;
+  width: 7rem;
+  height: 7rem;
+  border-radius: 50%;
+  display: inline-block;
+  vertical-align: middle;
+  border: 20px double var(--loaderCircles);
+  animation: bubble-turn 0.9s linear infinite;
+
+  &:before,
+  &:after {
+    box-sizing: border-box;
+    position: absolute;
+    content: "";
+    width: 1.5rem;
+    height: 1.5rem;
+    background: var(--loaderBubbles);
+    border-radius: 50%;
+    bottom: 0;
+    right: 3.7rem;
+  }
+
+  &:after {
+    left: 3.7rem;
+    top: 0;
+  }
+}
+
+@keyframes bubble-turn {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}

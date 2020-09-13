@@ -1,0 +1,81 @@
+@import '../../../../assets/scss/mixins';
+
+.no-jogs {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20rem;
+  height: calc(100vh - 31.6rem);
+
+  @include respond(low-phone) {
+    margin-top: 15rem;
+    height: calc(100vh - 26.6rem);
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &-icon {
+      margin-bottom: 5rem;
+
+      @include respond(l-phone) {
+        margin-bottom: 6rem;
+        width: 15rem;
+        height: 15rem;
+      }
+
+      @include respond(s-phone) {
+        margin-bottom: 3rem;
+        width: 12rem;
+        height: 12rem;
+      }
+    }
+
+    &-text {
+      font-size: 2.4rem;
+      line-height: 2.9rem;
+      white-space: nowrap;
+      color: var(--dark-gray-1);
+
+      @include respond(l-phone) {
+        font-size: 4.2rem;
+        line-height: 4.5rem;
+      }
+
+      @include respond(s-phone) {
+        font-size: 3.7rem;
+        line-height: 4rem;
+      }
+    }
+  }
+
+  .button {
+    position: absolute;
+    bottom: 10rem;
+    color: var(--baby-purple);
+    border: 3px solid var(--baby-purple);
+    width: 25rem;
+
+    @include respond(l-phone) {
+      font-size: 3rem;
+      bottom: 12rem;
+      border-radius: 7.5rem;
+      min-width: 40rem;
+      max-width: 50.1rem;
+      min-height: 10rem;
+      max-height: 12rem;
+    }
+
+    @include respond(s-phone) {
+      font-size: 2.5rem;
+      bottom: 7rem;
+      min-width: 35rem;
+      min-height: 8rem;
+    }
+  }
+}
+
+

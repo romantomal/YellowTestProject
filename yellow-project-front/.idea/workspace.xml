@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="fb773d8d-f48a-4258-9a9f-3fab80276918" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="SCSS File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1hEcwVU7eds5VZzTkcy1isrtAP7" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+    <property name="list.type.of.created.stylesheet" value="SCSS" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.standard" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.standard" value="" />
+    <property name="nodejs_interpreter_path" value="node" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2019.2.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\tomal\WebstormProjects\yellow-project-front\src\components\Ui\CircleButton" />
+      <recent name="C:\Users\tomal\WebstormProjects\yellow-project-front\src\asssets" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\tomal\WebstormProjects\yellow-project-front\src\components\Navigation\MobileMenu" />
+      <recent name="C:\Users\tomal\WebstormProjects\yellow-project" />
+      <recent name="C:\Users\tomal\WebstormProjects\yellow-project-front\src\store\reducers" />
+      <recent name="C:\Users\tomal\WebstormProjects\yellow-project-front\src\components\Ui\Input" />
+      <recent name="C:\Users\tomal\WebstormProjects\yellow-project-front\src\containers\Jogs\components" />
+    </key>
+  </component>
+  <component name="RunManager" selected="npm.npm start">
+    <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
+      <method v="2" />
+    </configuration>
+    <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="npm start" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.build" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fb773d8d-f48a-4258-9a9f-3fab80276918" name="Default Changelist" comment="" />
+      <created>1599579930476</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1599579930476</updated>
+      <workItem from="1599579932191" duration="17753000" />
+      <workItem from="1599598264409" duration="4000" />
+      <workItem from="1599634088059" duration="10188000" />
+      <workItem from="1599660524518" duration="12314000" />
+      <workItem from="1599812676046" duration="6000" />
+      <workItem from="1599820868272" duration="657000" />
+      <workItem from="1599821824680" duration="24789000" />
+      <workItem from="1599895276086" duration="26152000" />
+      <workItem from="1599929104195" duration="13691000" />
+      <workItem from="1599946230013" duration="108000" />
+      <workItem from="1599981976980" duration="33000" />
+    </task>
+    <task id="LOCAL-00001" summary="One big frontend update&#10;&#10;Changes:&#10;- Add all views, components and containers, from design&#10;- Add mobile style for views: Main, Jogs, NoJogs and JogsCreator&#10;- Add redux for Navbar, Jogs, JogsCreator&#10;- Made Jogs filterable&#10;- Allow redirect&#10;- Did managed folders for project&#10;- Save all icons from design&#10;- Change all preview icons and logos">
+      <created>1599929851928</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1599929851928</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="One big frontend update&#10;&#10;Changes:&#10;- Add all views, components and containers, from design&#10;- Add mobile style for views: Main, Jogs, NoJogs and JogsCreator&#10;- Add redux for Navbar, Jogs, JogsCreator&#10;- Made Jogs filterable&#10;- Allow redirect&#10;- Did managed folders for project&#10;- Save all icons from design" />
+    <MESSAGE value="One big frontend update&#10;&#10;Changes:&#10;- Add all views, components and containers, from design&#10;- Add mobile style for views: Main, Jogs, NoJogs and JogsCreator&#10;- Add redux for Navbar, Jogs, JogsCreator&#10;- Made Jogs filterable&#10;- Allow redirect&#10;- Did managed folders for project&#10;- Save all icons from design&#10;- Change all preview icons and logos" />
+    <option name="LAST_COMMIT_MESSAGE" value="One big frontend update&#10;&#10;Changes:&#10;- Add all views, components and containers, from design&#10;- Add mobile style for views: Main, Jogs, NoJogs and JogsCreator&#10;- Add redux for Navbar, Jogs, JogsCreator&#10;- Made Jogs filterable&#10;- Allow redirect&#10;- Did managed folders for project&#10;- Save all icons from design&#10;- Change all preview icons and logos" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="552" y="178" key="#ESLint" timestamp="1599580490073">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="178" key="#ESLint/0.0.1920.1040@0.0.1920.1040" timestamp="1599580490073" />
+    <state x="582" y="28" key="CommitChangelistDialog2" timestamp="1599929851062">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="582" y="28" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1599929851062" />
+    <state x="740" y="261" key="FileChooserDialogImpl" timestamp="1599981990497">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="261" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1599981990497" />
+    <state x="812" y="414" key="Github.ShareDialog" timestamp="1599929230223">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="812" y="414" key="Github.ShareDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1599929230223" />
+    <state width="949" height="261" key="GridCell.Tab.0.bottom" timestamp="1599946337704">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="949" height="261" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1599946337704" />
+    <state width="949" height="261" key="GridCell.Tab.0.center" timestamp="1599946337703">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="949" height="261" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1599946337703" />
+    <state width="949" height="261" key="GridCell.Tab.0.left" timestamp="1599946337703">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="949" height="261" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1599946337703" />
+    <state width="949" height="261" key="GridCell.Tab.0.right" timestamp="1599946337704">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="949" height="261" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1599946337704" />
+    <state x="461" y="162" key="SettingsEditor" timestamp="1599982009355">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1599982009355" />
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2" timestamp="1599981762050">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1599981762050" />
+    <state x="646" y="236" width="758" height="568" key="find.popup" timestamp="1599937024394">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="646" y="236" width="758" height="568" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1599937024394" />
+  </component>
+</project>

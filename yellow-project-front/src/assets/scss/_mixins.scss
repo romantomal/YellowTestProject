@@ -1,0 +1,17 @@
+@mixin respond($breakpoint) {
+  @if $breakpoint == s-phone {
+    @media only screen and (max-width: 25em) and (max-height: 43.75em) { @content };
+  }
+
+  @if $breakpoint == m-phone {
+    @media only screen and (max-width: 25em) { @content };
+  }
+
+  @if $breakpoint == xl-phone {
+    @media only screen and (max-width: 37.5em) and (max-height: 53.125em) { @content };
+  }
+
+  @if $breakpoint == l-phone {
+    @media only screen and (max-width: 37.5em) { @content };
+  }
+}

@@ -1,0 +1,43 @@
+@import '../../../../assets/scss/mixins';
+
+.date-filter {
+  background: var(--light-gray-1);
+
+  &__container {
+    display: flex;
+    justify-content: center;
+
+    .date-picker {
+      @include respond(l-phone) {
+        margin: 1.4rem 2rem 1.3rem;
+      }
+
+      @include respond(s-phone) {
+        margin: 1.4rem 0.8rem 1.2rem;
+      }
+
+      &__text {
+        @include respond(l-phone) {
+          font-size: 2rem;
+        }
+
+        @include respond(s-phone) {
+          margin-right: 0.2rem;
+          font-size: 1.8rem;
+        }
+      }
+
+      &__field {
+        @include respond(l-phone) {
+          border-radius: 13px;
+          height: 4rem;
+        }
+
+        &:focus {
+          outline: none;
+          border: 1px solid var(--apple-green);
+        }
+      }
+    }
+  }
+}

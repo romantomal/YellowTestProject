@@ -1,0 +1,70 @@
+@import '../../assets/scss/mixins';
+
+.main{
+  &__container {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    margin: auto;
+    width: 50rem;
+    height: 38rem;
+    border-radius: 4.4rem;
+    transform: translate(-50%, -50%);
+    background: var(--baby-purple);
+
+    @include respond(l-phone) {
+      top: 40%;
+      height: 100%;
+      width: 100%;
+      background: none;
+      justify-content: center;
+    }
+
+    &-icon {
+      width: 15rem;
+      height: 16rem;
+      margin-top: 7rem;
+
+      @include respond(l-phone) {
+        width: 25rem;
+        height: 25rem;
+
+        & path {
+          fill: var(--baby-purple)
+        }
+      }
+
+      @include respond(s-phone) {
+        width: 20rem;
+        height: 20rem;
+      }
+    }
+  }
+
+  .button {
+    margin-bottom: 4rem;
+
+    @include respond(l-phone) {
+      position: absolute;
+      border-radius: 7.5rem;
+      font-size: 3rem;
+      min-width: 25rem;
+      min-height: 10rem;
+      bottom: 8rem;
+      color: var(--baby-purple);
+      border: 4px solid var(--baby-purple);
+    }
+
+    @include respond(s-phone) {
+      font-size: 2.5rem;
+      bottom: 1rem;
+      min-width: 20rem;
+      min-height: 8rem;
+    }
+  }
+}
+
