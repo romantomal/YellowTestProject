@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fb773d8d-f48a-4258-9a9f-3fab80276918" name="Default Changelist" comment="" />
+    <list default="true" id="fb773d8d-f48a-4258-9a9f-3fab80276918" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/store/actions/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/reducers/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/Main/Main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Main/Main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/actions/actionTypes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/actions/actionTypes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/reducers/rootReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducers/rootReducer.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -29,7 +37,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../nw" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
@@ -105,7 +113,8 @@
       <workItem from="1599895276086" duration="26152000" />
       <workItem from="1599929104195" duration="13691000" />
       <workItem from="1599946230013" duration="108000" />
-      <workItem from="1599981976980" duration="33000" />
+      <workItem from="1599981976980" duration="3062000" />
+      <workItem from="1599985915148" duration="4108000" />
     </task>
     <task id="LOCAL-00001" summary="One big frontend update&#10;&#10;Changes:&#10;- Add all views, components and containers, from design&#10;- Add mobile style for views: Main, Jogs, NoJogs and JogsCreator&#10;- Add redux for Navbar, Jogs, JogsCreator&#10;- Made Jogs filterable&#10;- Allow redirect&#10;- Did managed folders for project&#10;- Save all icons from design&#10;- Change all preview icons and logos">
       <created>1599929851928</created>
@@ -114,61 +123,80 @@
       <option name="project" value="LOCAL" />
       <updated>1599929851928</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Add main Readme.md">
+      <created>1599985819849</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1599985819849</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
     <MESSAGE value="One big frontend update&#10;&#10;Changes:&#10;- Add all views, components and containers, from design&#10;- Add mobile style for views: Main, Jogs, NoJogs and JogsCreator&#10;- Add redux for Navbar, Jogs, JogsCreator&#10;- Made Jogs filterable&#10;- Allow redirect&#10;- Did managed folders for project&#10;- Save all icons from design" />
     <MESSAGE value="One big frontend update&#10;&#10;Changes:&#10;- Add all views, components and containers, from design&#10;- Add mobile style for views: Main, Jogs, NoJogs and JogsCreator&#10;- Add redux for Navbar, Jogs, JogsCreator&#10;- Made Jogs filterable&#10;- Allow redirect&#10;- Did managed folders for project&#10;- Save all icons from design&#10;- Change all preview icons and logos" />
-    <option name="LAST_COMMIT_MESSAGE" value="One big frontend update&#10;&#10;Changes:&#10;- Add all views, components and containers, from design&#10;- Add mobile style for views: Main, Jogs, NoJogs and JogsCreator&#10;- Add redux for Navbar, Jogs, JogsCreator&#10;- Made Jogs filterable&#10;- Allow redirect&#10;- Did managed folders for project&#10;- Save all icons from design&#10;- Change all preview icons and logos" />
+    <MESSAGE value="Add main Readme.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add main Readme.md" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="178" key="#ESLint" timestamp="1599580490073">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="178" key="#ESLint/0.0.1920.1040@0.0.1920.1040" timestamp="1599580490073" />
-    <state x="582" y="28" key="CommitChangelistDialog2" timestamp="1599929851062">
+    <state x="582" y="0" key="CommitChangelistDialog2" timestamp="1599985819457">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="582" y="28" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1599929851062" />
-    <state x="740" y="261" key="FileChooserDialogImpl" timestamp="1599981990497">
+    <state x="582" y="0" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1599985819457" />
+    <state x="740" y="261" key="FileChooserDialogImpl" timestamp="1599982663516">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="261" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1599981990497" />
-    <state x="812" y="414" key="Github.ShareDialog" timestamp="1599929230223">
+    <state x="740" y="261" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1599982663516" />
+    <state x="812" y="414" key="Github.ShareDialog" timestamp="1599982048792">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="812" y="414" key="Github.ShareDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1599929230223" />
-    <state width="949" height="261" key="GridCell.Tab.0.bottom" timestamp="1599946337704">
+    <state x="812" y="414" key="Github.ShareDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1599982048792" />
+    <state x="691" y="143" key="Github.UntrackedFilesDialog" timestamp="1599982066479">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="949" height="261" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1599946337704" />
-    <state width="949" height="261" key="GridCell.Tab.0.center" timestamp="1599946337703">
+    <state x="691" y="143" key="Github.UntrackedFilesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1599982066479" />
+    <state width="1899" height="261" key="GridCell.Tab.0.bottom" timestamp="1599986949563">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="949" height="261" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1599946337703" />
-    <state width="949" height="261" key="GridCell.Tab.0.left" timestamp="1599946337703">
+    <state width="1899" height="261" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1599986949563" />
+    <state width="1899" height="261" key="GridCell.Tab.0.center" timestamp="1599986949563">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="949" height="261" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1599946337703" />
-    <state width="949" height="261" key="GridCell.Tab.0.right" timestamp="1599946337704">
+    <state width="1899" height="261" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1599986949563" />
+    <state width="1899" height="261" key="GridCell.Tab.0.left" timestamp="1599986949563">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="949" height="261" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1599946337704" />
-    <state x="461" y="162" key="SettingsEditor" timestamp="1599982009355">
+    <state width="1899" height="261" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1599986949563" />
+    <state width="1899" height="261" key="GridCell.Tab.0.right" timestamp="1599986949563">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="461" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1599982009355" />
-    <state x="552" y="249" key="Vcs.Push.Dialog.v2" timestamp="1599981762050">
+    <state width="1899" height="261" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1599986949563" />
+    <state x="461" y="162" key="SettingsEditor" timestamp="1599985971235">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="249" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1599981762050" />
-    <state x="646" y="236" width="758" height="568" key="find.popup" timestamp="1599937024394">
+    <state x="461" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1599985971235" />
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2" timestamp="1599985822073">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="646" y="236" width="758" height="568" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1599937024394" />
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1599985822073" />
+    <state x="646" y="236" width="758" height="568" key="find.popup" timestamp="1599987027312">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="646" y="236" width="758" height="568" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1599987027312" />
+    <state x="663" y="293" key="git4idea.merge.GitPullDialog" timestamp="1599985835522">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="663" y="293" key="git4idea.merge.GitPullDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1599985835522" />
   </component>
 </project>
