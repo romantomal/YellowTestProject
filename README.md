@@ -2,7 +2,7 @@
 
 ## Completed tasks
 - [x] Make a simple layout, taking into account the rules of Responsive Web Design.
-- [ ] Integration of the frontend application with the backend REST API.
+- [x] Integration of the frontend application with the backend REST API.
 - [x] Implement a mechanism session.
 - [x] Implement form entering information about the jogs.
 - [x] Implement filtering of jogs records.
@@ -15,3 +15,12 @@ cd yellow-test-project/yellow-project-front
 npm install
 ng start
 ```
+For testing database :
+````
+Database:   MySql
+Db name:    'yellow_db'
+Username:   'root'
+Host:       'localhost'
+Port:       '3306'
+Password:   'root'
+````

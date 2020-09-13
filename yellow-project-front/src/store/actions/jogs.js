@@ -1,23 +1,39 @@
-import {JogModel} from "../../containers/Jogs/models/JogModel";
 import {
-    CHANGE_SHOW_DATE_FILTER_VALUE,
+    CHANGE_SHOW_DATE_FILTER_VALUE, CREATE_JOG_START, CREATE_JOG_SUCCESS,
     FETCH_JOGS_ERROR,
     FETCH_JOGS_START,
     FETCH_JOGS_SUCCESS,
     REDIRECT_TO_URL, REDIRECT_TO_URL_SUCCESS,
     SAVE_FILTERED_JOGS
 } from "./actionTypes";
+import axios from "../../theme/axios";
 
 export function fetchJogs() {
-    return dispatch => {
+    return async dispatch => {
         dispatch(fetchJogsStart());
         try {
-            let jogs = [];
-            jogs.push(new JogModel('23.11.1994', 24, 22, 22));
-            jogs.push(new JogModel('23.11.2001', 24, 22, 22));
-            jogs.push(new JogModel('23.11.2008', 24, 22, 22));
-            jogs.push(new JogModel('23.11.2020', 24, 22, 22));
-            dispatch(fetchJogsSuccess(jogs));
+            const token = localStorage.getItem('token');
+            await axios.get('/v1/jogs', {params: {token}})
+                .then((response) => {
+                    const jogs = response.data || [];
+                    dispatch(fetchJogsSuccess(jogs));
+                });
+        } catch (error) {
+            dispatch(fetchJogsError(error));
+        }
+    }
+}
+
+export function createNewJog(date, speed, distance, time) {
+    return async dispatch => {
+        dispatch(createJogStart());
+        try {
+            const token = localStorage.getItem('token');
+            await axios.post('/v1/jogs', {params: {token, date, speed, distance, time}})
+                .then((response) => {
+                    const jogs = response.data || [];
+                    dispatch(createJogSuccess(jogs));
+                });
         } catch (error) {
             dispatch(fetchJogsError(error));
         }
@@ -71,6 +87,19 @@ export function fetchJogsError(error) {
     return {
         type: FETCH_JOGS_ERROR,
         error
+    }
+}
+
+export function createJogStart() {
+    return {
+        type: CREATE_JOG_START
+    }
+}
+
+export function createJogSuccess(jogs) {
+    return {
+        type: CREATE_JOG_SUCCESS,
+        jogs
     }
 }
 

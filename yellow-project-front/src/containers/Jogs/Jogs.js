@@ -16,16 +16,12 @@ class Jogs extends Component {
         this.props.fetchJogs();
     }
 
-    convertJodToDate(jog) {
-        const date = jog.date.split('.');
-        return new Date(date[2], date[1] - 1, date[0])
-    }
-
     renderJogsList() {
         return this.props.jogsFiltered.map(jog => {
             const {date, speed, distance, time} = jog;
+            const dateFormatted = new Date(date).toLocaleDateString();
             return (
-                <Jog date={date} speed={speed} distance={distance} time={time} key={Math.random()}/>
+                <Jog date={dateFormatted} speed={speed} distance={distance} time={time} key={Math.random()}/>
             )
         })
     }
@@ -34,7 +30,7 @@ class Jogs extends Component {
         return (
             <React.Fragment>
                 { this.props.showDateFilter ? <DateFilter filter={(dateFrom, dateTo) => this.filterByDate(dateFrom, dateTo)}/> : null }
-                <div className={'jogs__container'}>
+                <div className={`jogs__container ${!this.props.showDateFilter ? 'jogs__container-padding' : ''}`}>
                     {this.renderJogsList()}
                 </div>
                 <CircleButton click={() => this.allowRedirect('jogsCreator')}/>
@@ -60,7 +56,7 @@ class Jogs extends Component {
 
         if (dateFrom && dateTo) {
             for (const jog of this.props.jogs) {
-                const jogDate = this.convertJodToDate(jog);
+                const jogDate = new Date(jog.date);
                 if (jogDate > dateFrom && jogDate < dateTo) {
                     jogsFiltered.push(jog);
                 }

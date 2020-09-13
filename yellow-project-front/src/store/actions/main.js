@@ -2,19 +2,24 @@ import {
     AUTHENTICATION_LOGOUT,
     AUTHENTICATION_SUCCESS,
 } from "./actionTypes";
+import axios from "../../theme/axios";
 
 export function auth() {
-    return dispatch => {
-        const token = 'dsad2344dsdasd';
-        let date = new Date();
-        date.setDate(date.getDate() + 1);
-        const expirationDate = date;
+    return async dispatch => {
+        try {
+            await axios.get('/v1/auth/token')
+                .then((response) => {
+                const {token, expirationDate} = response.data;
 
-        localStorage.setItem('token', token);
-        localStorage.setItem('expirationDate', expirationDate.toLocaleString());
+                localStorage.setItem('token', token);
+                localStorage.setItem('expirationDate', expirationDate);
 
-        dispatch(authSuccess(token));
-        dispatch(autoLogout(calculateLogoutTime(expirationDate)));
+                dispatch(authSuccess(token));
+                dispatch(autoLogout(calculateLogoutTime(expirationDate)));
+            });
+        } catch (error) {
+            console.log(error)
+        }
     }
 }
 
@@ -43,13 +48,21 @@ export function autoLogout(time) {
     return dispatch => {
         setTimeout(() => {
             dispatch(logout())
-        }, time * 1000);
+        }, time);
     }
 }
 
 export function logout() {
-    localStorage.removeItem('token');
-    localStorage.removeItem('expirationDate');
+    const token = localStorage.getItem('token');
+    try {
+        axios.delete('/v1/auth/token', {params: {token}})
+            .then(() => {
+                localStorage.removeItem('token');
+                localStorage.removeItem('expirationDate');
+            });
+    } catch (error) {
+        console.log(error)
+    }
     return {
         type: AUTHENTICATION_LOGOUT,
     }

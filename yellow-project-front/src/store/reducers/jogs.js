@@ -1,5 +1,5 @@
 import {
-    CHANGE_SHOW_DATE_FILTER_VALUE,
+    CHANGE_SHOW_DATE_FILTER_VALUE, CREATE_JOG_START, CREATE_JOG_SUCCESS,
     FETCH_JOGS_ERROR,
     FETCH_JOGS_START,
     FETCH_JOGS_SUCCESS,
@@ -34,6 +34,10 @@ export default function jogsReducer(state = initialState, action) {
             return {...state, redirect: false, redirectUrl: ''};
         case CHANGE_SHOW_DATE_FILTER_VALUE:
             return {...state, showDateFilter: action.value};
+        case CREATE_JOG_START:
+            return {...state, loading: true};
+        case CREATE_JOG_SUCCESS:
+            return {...state, loading: false, jogs: action.jogs, jogsFiltered: action.jogs};
         default:
             return state;
     }

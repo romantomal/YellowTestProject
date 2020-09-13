@@ -7,9 +7,13 @@
     display: flex;
     justify-content: center;
 
+    @include respond(l-phone) {
+      padding-top: 11.6rem;
+    }
+
     .date-picker {
       @include respond(l-phone) {
-        margin: 1.4rem 2rem 1.3rem;
+        margin: 1.4rem 1.8rem 1.3rem;;
       }
 
       @include respond(s-phone) {

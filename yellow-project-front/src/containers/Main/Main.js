@@ -15,7 +15,7 @@ class Main extends Component {
     }
 
     renderRedirect() {
-        if (this.props.redirect && this.props.token) {
+        if (this.props.redirect) {
             switch (this.props.redirectUrl) {
                 case 'jogs':
                     return <Redirect to="/jogs"/>;
@@ -50,7 +50,7 @@ class Main extends Component {
 
 function mapStateToProps(state) {
     return {
-        token: state.main.authToken,
+        token: state.main.token,
         redirect: state.jogs.redirect,
         redirectUrl: state.jogs.redirectUrl
     }
