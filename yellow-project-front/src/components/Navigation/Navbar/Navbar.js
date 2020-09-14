@@ -51,7 +51,7 @@ class Navbar extends Component {
                     </BrowserView>
                     <MobileView>
                         <div className={`${nav}__container`}>
-                            {this.isRoutePath('/jogs') ? this.renderEnableFilterButton(nav) : null}
+                            {this.isRoutePath('/jogs') && this.props.jogs !== 0 ? this.renderEnableFilterButton(nav) : null}
                             <MenuIcon className={`${nav}__container-icon`} src={MenuIcon} alt="Menu Icon" onClick={() => this.changeVisibilityOfMobileMenu()}/>
                         </div>
                     </MobileView>
@@ -64,6 +64,7 @@ class Navbar extends Component {
 
 function mapStateToProps(state) {
     return {
+        jogs: state.jogs.jogs,
         showDateFilter: state.jogs.showDateFilter,
         showMobileMenu: state.menu.showMobileMenu
     }

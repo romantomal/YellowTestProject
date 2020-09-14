@@ -19,6 +19,13 @@
     text-align: center;
     border: 1px solid var(--dark-gray-1);
     background-color: var(--classic-white);
+
+    @include respond(l-phone) {
+      font-size: 2.2rem;
+    }
+    @include respond(s-phone) {
+      font-size: 2rem;
+    }
   }
 }
 
@@ -44,5 +51,14 @@
     line-height: 1.9rem !important;
     margin: 0.166rem !important;
   }
+  .react-datepicker__navigation--next, .react-datepicker__navigation--previous {
+    height: 2rem !important;
+    width: 2rem !important;
+    top: 2.5rem !important;
+  }
+  .react-datepicker__navigation {
+    border: 1.45rem solid #ccc !important;
+  }
+  .react-datepicker__triangle { margin-top: 0 !important;}
   .react-datepicker-popper { transform: translate3d(50%, 70%, 0px) !important;}
 }

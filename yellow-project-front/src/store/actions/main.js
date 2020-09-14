@@ -38,7 +38,7 @@ export function autoLogin() {
         if (token && calculateLogoutTime(expirationDate) > 0) {
             dispatch(authSuccess(token));
             dispatch(autoLogout(calculateLogoutTime(expirationDate)));
-        } else {
+        } else if (token) {
             dispatch(logout());
         }
     }

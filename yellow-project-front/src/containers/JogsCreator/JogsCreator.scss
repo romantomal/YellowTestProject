@@ -21,10 +21,12 @@
       top: 50%;
       width: 80%;
       height: 55%;
+      padding-top: 4rem;
     }
 
     @include respond(s-phone) {
       height: 60%;
+      padding-top: 3rem;
     }
 
     &-close {
@@ -64,7 +66,7 @@
 
         @include respond(l-phone) {
           font-size: 2.2rem;
-          line-height: 5rem;
+          line-height: 3rem;
         }
 
         @include respond(s-phone) {
@@ -75,19 +77,24 @@
 
       &-input {
         width: 23.6rem;
-        height: 3rem;
+        line-height: 3rem;
         border-radius: 11px;
         text-align: center;
+        align-self: center;
+        padding: 0;
+        padding-inline-start: 0;
         border: 1px solid var(--dark-gray-1);
         background-color: var(--classic-white);
 
         @include respond(l-phone) {
           align-items: center;
-          height: 5rem;
+          font-size: 2.2rem;
+          line-height: 5rem;
           width: 100%;
         }
         @include respond(s-phone) {
-          height: 4rem;
+          font-size: 2rem;
+          line-height: 4rem;
         }
 
         &:focus {
@@ -151,6 +158,14 @@
     height: 3rem !important;
     line-height: 1.9rem !important;
     margin: 0.166rem !important;
+  }
+  .react-datepicker__navigation--next, .react-datepicker__navigation--previous {
+    height: 2rem !important;
+    width: 2rem !important;
+    top: 2.5rem !important;
+  }
+  .react-datepicker__navigation {
+    border: 1.45rem solid #ccc !important;
   }
   .react-datepicker-popper { transform: translate3d(40%, 50%, 0px) !important;}
 }

@@ -14,7 +14,7 @@ const FilterDatePicker = props => {
     return (
         <div className="date-picker">
             <span className="date-picker__text">{props.label}</span>
-            <DatePicker className="date-picker__field" id={props.id} selected={date} onChange={date => changeDate(date)} closeOnScroll={true}/>
+            <DatePicker className="date-picker__field" id={props.id} selected={date} onChange={date => changeDate(date)} inputProps={{ component: props => <input {...props} readOnly />}}/>
         </div>
     )
 };

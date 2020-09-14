@@ -6,7 +6,7 @@
 - [x] Implement a mechanism session.
 - [x] Implement form entering information about the jogs.
 - [x] Implement filtering of jogs records.
-- [ ] Deploy project on heroku.
+- [x] Deploy project on heroku.
 - [ ] Implement UI tests for Swagger UI
 
 Don't remind to

@@ -64,7 +64,7 @@ class JogsCreator extends Component {
                     </div>
                     <div className={`${jogsCreator}__container-field`}>
                         <span className={`${jogsCreator}__container-field-text`}>Date </span>
-                        <DatePicker className={`${jogsCreator}__container-field-input`} selected={this.state.date} onChange={date => this.setState({date})} />
+                        <DatePicker className={`${jogsCreator}__container-field-input`} selected={this.state.date} onChange={date => this.setState({date})} inputProps={{ component: props => <input {...props} readOnly />}}/>
                     </div>
                     <Button text='Save' click={() => this.submitSaveNewJog()}/>
                 </div>
