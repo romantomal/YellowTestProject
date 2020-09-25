@@ -1,6 +1,6 @@
 import axios from "axios";
 
 export default axios.create({
-    baseURL: "https://yellow-test-project.herokuapp.com/",
+    baseURL: "http://localhost:8080",
     responseType: "json"
 });

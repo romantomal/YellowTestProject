@@ -6,7 +6,7 @@
     position: absolute;
     display: flex;
     flex-direction: column;
-    padding-top: 13rem;
+    top: 40%;
     left: 50%;
     margin: auto;
     width: 60rem;
@@ -15,10 +15,12 @@
     transform: translate(-50%, -50%);
 
     @include respond(l-phone) {
-      padding-top: 11.6rem;
       width: 85%;
     }
 
+    @include respond(s-phone) {
+      top: 45%;
+    }
     &-header {
       font-size: 3.6rem;
       font-weight: bold;
